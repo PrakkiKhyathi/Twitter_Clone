@@ -4,6 +4,7 @@ import {
   validateEmailId,
   validatePassword,
 } from "../../Validation/Validator";
+import styles from "../../moduleCss/LoginForm.module.css";
 import { ErrorSharp } from "@mui/icons-material";
 import TwitterImage from "./TwitterImage";
 import { Link } from "react-router-dom";
@@ -35,7 +36,7 @@ function ForgotPassword() {
     setMandatory(false);
     setSuccessMessage("");
     setErrorMessage("");
-    const { name, valid } = e.target;
+    const { name, value } = e.target;
     setState((state) => ({ ...state, [name]: value }));
     validateField(name, value);
   }

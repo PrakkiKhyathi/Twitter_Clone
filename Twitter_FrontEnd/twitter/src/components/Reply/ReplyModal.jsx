@@ -346,7 +346,7 @@ function ReplyModal({ handleClose, tweetItem, open, profileData }) {
                         onChange={(e) => handleImageChange(e, "image")}
                       />
                     </label>
-                    <label className="Flex align-items-center gap-2 rounded-md cursor-pointer">
+                    <label className="flex align-items-center gap-2 rounded-md cursor-pointer">
                       <SlideshowIcon className="text-primary" />
 
                       <input
